@@ -1,0 +1,12 @@
+/*
+Theme Name: mywptest
+Author: SierraGroup PE
+Description: Woocommerce theme for wahashop.local
+Version: 1.0
+Text Domain: mywptest
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import '/dist/css/style.css' screen;
