@@ -113,7 +113,7 @@ gulp.task('browser-sync', function (){
     ] ;
 
     browserSync.init (files, {
-        proxy: "mywptest",
+        proxy: "http://wahashop.local/checkout/",
         notify: false
     });
 });

@@ -4,7 +4,7 @@
    Typography
 -----------------------------------------*/
 body {
-  font-family: 'MetaPro';
+  font-family: 'Gotham Pro';
   background: $white;
 }
 
@@ -12,40 +12,74 @@ body {
 
 @charset "UTF-8";
 
-@font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-book.otf') format ('otf');
-  font-weight: 300;
-  font-style: normal;
-}
 
 @font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-normal.otf') format ('otf');
+  font-family: 'Amsterdam-Deco-One';
+  src: url('../fonts/ammsterdam/Amsterdam-Deco-One.ttf') format ('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-medium.otf') format ('otf');
-  font-weight: 500;
+  font-family: 'Amm';
+  src: url('../fonts/amm/Amsterdam-Deco-One.ttf') format ('ttf');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-bold.otf') format ('otf');
+  font-family: 'Amsterdam-Deco-Two';
+  src: url('../fonts/11376.ttf') format ('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amsterdam';
+  src: url('../fonts/amsterdam/amsterdam.ttf') format ('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro/GothamPro.ttf') format ('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro/GothamPro-Italic.ttf') format ('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro/GothamPro-Bold.ttf') format ('ttf');
   font-weight: 700;
   font-style: normal;
 }
 
+
 @font-face {
-  font-family: 'MetaPro';
-  src: url('../fonts/metapro/metapro-black.otf') format ('otf');
-  font-weight: 900;
+  font-family: 'PT Sans';
+  src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format ('ttf');
+  font-weight: 400;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PT_Sans/PT_Sans-Web-Bold.ttf') format ('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 
 
 

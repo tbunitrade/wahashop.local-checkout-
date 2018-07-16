@@ -1,0 +1,210 @@
+.woocommerceCheckoutPageWrap {
+
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 1450px;
+  min-height: 500px;
+  background: red;
+
+  .checkoutHeader {
+    height: 313px;
+    width: 100%;
+    max-width: 1448px;
+    display: inline-block;
+    vertical-align: top;
+    background: url("../img/chekout-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .currentPage {
+    font-size: 42px;
+    font-family: 'Amsterdam-Deco-One';
+    font-family: 'Amsterdam-Deco-Two';
+    font-family: 'Amsterdam';
+    color: $ammsterdam;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  h3{
+    font-family: 'Gotham Pro';
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .dot {
+    border-radius: 50px;
+    width: 7px;
+    height: 7px;
+    display: block;
+    background: $ammsterdam;
+    display: block;
+    margin: auto;
+  }
+
+  .navigation {
+    margin: auto;
+    display: block;
+    width: 170px;
+
+    width: 183px;
+    height: 40px;
+    background: url("../img/navigation.png");
+    background-size: contain;
+
+    .nav1,
+    .nav2,
+    .nav3 {
+      display: inline-block;
+      vertical-align: top;
+      height: 55px;
+      line-height: 55px;
+
+      a {
+        font-size: 43px;
+        font-family: 'Amsterdam-Deco-One';
+        font-family: 'Amm';
+        font-family: 'Amsterdam';
+        color: $ammsterdam;
+        opacity: 0.5;
+        position: relative;
+        padding:0px 21px 0px 15px;
+
+        &:after {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 7px;
+          height: 31px;
+        }
+
+        &:hover {
+          text-decoration:none ;
+        }
+      }
+
+
+    }
+  }/*end fo navigation*/
+  .costumerData,
+  .productList {
+
+    display: inline-block;
+    display: block;
+    margin: auto;
+    vertical-align: top;
+    max-width: 710px;
+    background: $colorproductlist;
+    min-height: 667px;
+
+    .title {
+      color:$cart;
+      font-size:16px ;
+      font-weight: bold;
+      font-family: 'Gotham Pro';
+      line-height: 20px;
+      text-align: left;
+      padding-top: 64px;
+
+
+
+      label {
+        display: block;
+        text-align: left;
+        color:$cartlabel;
+        font-size: 34px;
+        font-weight: bold;
+        font-family: 'Gotham Pro';
+        line-height: 39.2px;
+        padding-top: 10px;
+      }
+
+    }
+  }
+
+  .costumerData {
+    background: $bgcustomer;
+
+    .loginWoo {
+      text-decoration: none;
+      color: white;
+      width:126px ;
+      height: 39px;
+      background: $ammsterdam;
+      line-height: 39px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .loginWooLabel {
+      font-size: 12px;
+      line-height: 17px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .form {
+
+      fieldset{
+
+        input {
+          width: 100%;
+          max-width: 460px;
+          display: inline-block;
+          height: 60px;
+          line-height: 60px;
+
+          //::-moz-placeholder{
+          //  color: red;
+          //}
+          //
+          //::placeholder{
+          //  color: red;
+          //}
+        }
+        ::-moz-placeholder{
+          color: #262626;
+          opacity: 0.33;
+          font-size: 16px;
+          line-height: 16px;
+        }
+
+        ::placeholder{
+          color: #262626;
+          opacity: 0.33;
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+
+    }
+
+  }
+
+  .productSummary {
+    padding: 0;
+    margin: 0;
+
+
+    .produclLi {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+
+    }
+
+  }
+
+  .totalWrap {
+
+    @media (min-width: 1600px) {
+      padding-left: 100px;
+    }
+  }
+
+}
