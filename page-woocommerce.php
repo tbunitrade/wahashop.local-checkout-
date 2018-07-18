@@ -392,7 +392,7 @@ Template Name: Woocommerce checkout
 
                                    <div class="item">
                                        <div class="row">
-                                           <div class="col-md-3"><a href="#" class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/slider/product3.png" alt="Image" style="max-width:100%;"></a>
+                                           <div class="col-md-4"><a href="#" class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/slider/product3.png" alt="Image" style="max-width:100%;"></a>
                                                <p class="priceCarousel">
 
                                                    Saphir Sole Guard: масло для кожаной подошвы
@@ -402,7 +402,7 @@ Template Name: Woocommerce checkout
                                                </p>
                                                <label class="stars"></label>
                                            </div>
-                                           <div class="col-md-3"><a href="#" class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/slider/product1.png" alt="Image" style="max-width:100%;"></a>
+                                           <div class="col-md-4"><a href="#" class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/slider/product1.png" alt="Image" style="max-width:100%;"></a>
                                                <p class="priceCarousel">
 
                                                    Saphir Sole Guard: масло для кожаной подошвы
@@ -412,7 +412,7 @@ Template Name: Woocommerce checkout
                                                </p>
                                                <label class="stars"></label>
                                            </div>
-                                           <div class="col-md-3"><a href="#" class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/slider/product2.png" alt="Image" style="max-width:100%;"></a>
+                                           <div class="col-md-4"><a href="#" class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/slider/product2.png" alt="Image" style="max-width:100%;"></a>
                                                <p class="priceCarousel">
 
                                                    Saphir Sole Guard: масло для кожаной подошвы
