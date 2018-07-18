@@ -12,7 +12,7 @@
          //    $(step1).addClass('displaynone');
          // }
 
-     $(step1).on('click', function(e){
+     $(button).on('click', function(e){
          e.preventDefault();
          console.log('Start check rules of fields - no fields Test click');
          $(step1).addClass('displaynone');
