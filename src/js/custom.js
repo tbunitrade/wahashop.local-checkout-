@@ -1,140 +1,63 @@
  $(document).ready(function(){
     console.log('ready');
 
-     // $('.panel-image-prop').mouseover( function() {
-     //     console.log('hover at article');
-     //     $(this).css("opacity", "0.5");
-     //     $('.hrefTypeOne').css("opacity","1");
-     //
-     // });
-     //
-     // $('.panel-image-prop').mouseout( function() {
-     //     console.log('hover at article');
-     //     $(this).css("opacity", "1");
-     // });
 
+        var button = document.getElementById('nextstep');
+        var step1 = document.getElementById('step1');
+        var step2 = document.getElementById('step2');
+        var step3 = document.getElementById('step3');
 
-    $('.hrefTypeOne').mouseover(function(){
-       if ( $('.hrefTypeOne').hover() == true ) {
-           console.log('true');
-       }
-       else {
-           console.log('false');
-       }
-    });
+         // function name1() {
+         //     console.log('Test click');
+         //    $(step1).addClass('displaynone');
+         // }
 
-     $(document).on('click','.sunset-load-more:not(.loading)', function(){
+     $(step1).on('click', function(e){
+         e.preventDefault();
+         console.log('Start check rules of fields - no fields Test click');
+         $(step1).addClass('displaynone');
 
-         var that = $(this);
-         var page = that.data('page');
-         var newPage = page+1;
-         var ajaxurl = that.data('url');
-         console.log('page ' + page + ' Start Ajax');
+         $(step2).removeClass('displaynone');
 
-         that.addClass('loading').find('.textDown').slideUp(100);
-         console.log('Add loading');
+         $('#number1').removeClass('active');
 
-         $.ajax({
-             url : ajaxurl,
-             type : 'post',
-
-             data :  {
-                 page : page,
-                 action : 'sunset_load_more'
-             },
-
-             error : function(response) {
-                 console.log(response);
-             },
-
-             success :  function(response) {
-                 setTimeout(function(){
-                     that.data('page', newPage );
-                     $('.sunset-posts-container').append(response);
-                     that.removeClass('loading').find('.textDown').slideDown(100);
-                     console.log('cancel loading');
-                     revealPosts();
-                 } , 1200);
-             }
-         });
+         $('#number2').addClass('active');
+         $('#current').text(2);
      });
 
-     /*reveal posts*/
 
-     function revealPosts (){
-         var posts = $('article:not(.reveal)');
-         var i = 0;
+     $('.lunchStep3').on('click', function(e){
+         e.preventDefault();
+         console.log('Second event check rules of fields - no fields Test click');
+         $(step2).addClass('displaynone');
 
-         setInterval( function(){
-             if( i >= posts.lenght ) return false;
-             var el = posts[i];
-             $(el).addClass('reveal');
-             i++;
-         }, 200);
+         $(step3).removeClass('displaynone');
 
+         $('#number2').removeClass('active');
 
-     }
-
-     /*scroll functions*/
-
-     /*Variable declaration*/
-     var last_scroll = 0;
-     /*End of declaration*/
-
-     $(window).scroll( function(){
-
-         var scroll = $(window).scrollTop();
-         console.log(scroll);
-
-         if ( Math.abs( scroll - last_scroll) > $(window).height()*0.1 ) {
-             last_scroll = scroll;
-             console.log('scroll updated ' +  last_scroll  );
-
-             $('.page-limit').each(function(index){
-
-                 if ( isVisible($(this)) ) {
-                     console.log('visible');
-
-                     history.replaceState( null, null, $(this).attr("data-page") );
-                     return(false);
-
-                 }
-
-             });
-         }
-
+         $('#number3').addClass('active');
+         $('#current').text(3);
      });
 
-     function isVisible( element){
+     $('#endorder').on('click', function(e){
+         e.preventDefault();
+         alert('Product Send Success to DB');
+         console.log('Back to start  - no fields Test click');
+         $(step3).addClass('displaynone');
 
-         var scroll_pos = $(window).scrollTop();
-         var window_height = $(window).height();
-         var el_top = $(element).offset().top;
-         var el_height = $(element).height();
-         var el_bottom = el_top + el_height;
+         $(step1).removeClass('displaynone');
 
-         return ( ( el_bottom - el_height*0.25 > scroll_pos) && (el_top < (scroll_pos+0.5*window_height) ) );
+         $('#number3').removeClass('active');
 
-     }
+         $('#number1').addClass('active');
 
-
-     /*Infinite Scroll*/
-     $(window).scroll(function() {
-         if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-             $('.sunset-load-more').click();
-             console.log('click');
-         }
+         $('#current').text(1);
      });
 
 
 
- });
 
- $(window).scroll(function(){
-     console.log('scroll start');
-     var sticky = $('.sticky'),
-         scroll = $(window).scrollTop();
 
-     if (scroll >= 100) sticky.addClass('fixxed');
-     else sticky.removeClass('fixxed');
+
+
  });

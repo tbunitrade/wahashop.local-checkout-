@@ -24,7 +24,7 @@
 <header class="headerMain" itemscope itemtype="http://schema.org/WPHeader">
     <div class="innerContainer">
         <div class="logoContainer col-xs-4 col-sm-2 col-md-2">
-            <a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_bloginfo('template_url')?>/dist/img/logo.png" alt=""/></a>
+<!--            <a class="logo" href="--><?php //echo home_url(); ?><!--"><img src="--><?php //echo get_bloginfo('template_url')?><!--/dist/img/logo.png" alt=""/></a>-->
         </div>
         <!-- ================== NAVBAR ================ -->
         <nav class="mynavbarBig navbar navbar-default col-xs-8 col-sm-7 col-md-8" role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
