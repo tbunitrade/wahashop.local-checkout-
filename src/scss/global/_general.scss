@@ -43,7 +43,10 @@ body {
 
 @font-face {
   font-family: 'GothamPro';
-  src: url('../fonts/GothamPro/GothamPro.ttf') format ('ttf');
+  src: url('../fonts/gothamfont/GothamPro.ttf') format ('ttf');
+  src: url('../fonts/gothamfont/GothamPro.svg') format ('svg');
+  src: url('../fonts/gothamfont/GothamPro.woff') format ('woff');
+  src: url('../fonts/gothamfont/GothamPro.eot') format ('eot');
   font-weight: 400;
   font-style: normal;
 }

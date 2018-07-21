@@ -37,93 +37,130 @@ Template Name: Woocommerce checkout
                            <ul class="productSummary">
                                <li class="produclLi">
                                    <div class="row">
-                                       <img class="img-resposive" src="<?php echo get_template_directory_uri(); ?>/dist/img/product/sample1.png">
-                                       <p class="name">
-                                          Чехол-несессер Waxa Shop
-                                       </p>
-                                       <p class="data">
-                                           1 Х 2 660 Р.-
-                                       </p>
-                                       <p class="attribute color">
-                                           Цвет: Темно-коричневый
-                                       </p>
 
-                                       <div class="sum">
-                                           <em>+</em><label>1</label>
+                                       <div class="col-md-2">
+                                            <img class="img-resposive" src="<?php echo get_template_directory_uri(); ?>/dist/img/product/sample1.png">
                                        </div>
-                                       <div class="cancel">
 
+                                       <div class="col-md-10">
+                                           <p class="name">
+                                               Чехол-несессер Waxa Shop
+                                           </p>
+                                           <p class="data">
+                                               1 Х 750 <span>Р.-</span>
+                                           </p>
+                                           <p class="attribute color">
+                                               Цвет: Темно-коричневый
+                                           </p>
+
+                                           <div class="sum">
+                                               <em>+</em><label>1</label>
+                                           </div>
+                                           <div class="minus">
+                                               <em>-</em><label>1</label>
+                                           </div>
+                                           <div class="cancel">
+
+                                           </div>
                                        </div>
+
                                    </div>
                                </li>
-                               <!-- more li-->
+
                                <li class="produclLi">
                                    <div class="row">
-                                       <img class="img-resposive" src="<?php echo get_template_directory_uri(); ?>/dist/img/product/sample1.png">
-                                       <p class="name">
-                                           Чехол-несессер Waxa Shop
-                                       </p>
-                                       <p class="data">
-                                           1 Х 2 660 Р.-
-                                       </p>
-                                       <p class="attribute color">
-                                           Цвет: Темно-коричневый
-                                       </p>
 
-                                       <div class="sum">
-                                           <em>+</em><label>1</label>
+                                       <div class="col-md-2">
+                                           <img class="img-resposive" src="<?php echo get_template_directory_uri(); ?>/dist/img/product/sample1.png">
                                        </div>
-                                       <div class="cancel">
 
+                                       <div class="col-md-10">
+                                           <p class="name">
+                                               Чехол-несессер Waxa Shop
+                                           </p>
+                                           <p class="data">
+                                               1 Х 750 <span>Р.-</span>
+                                           </p>
+                                           <p class="attribute color">
+                                               Цвет: Темно-коричневый
+                                           </p>
+
+                                           <div class="sum">
+                                               <em>+</em><label>1</label>
+                                           </div>
+
+                                           <div class="minus">
+                                               <em>-</em><label>1</label>
+                                           </div>
+                                           <div class="cancel">
+
+                                           </div>
                                        </div>
+
                                    </div>
                                </li>
 
-                               <!-- more li-->
                                <li class="produclLi">
                                    <div class="row">
-                                       <img class="img-resposive" src="<?php echo get_template_directory_uri(); ?>/dist/img/product/sample1.png">
-                                       <p class="name">
-                                           Cетка для полировки из козьего ворса (темная колодка, 140 х 55 мм)
-                                       </p>
-                                       <p class="data">
-                                           1 Х 2 660 Р.-
-                                       </p>
-                                       <p class="attribute color">
-                                           Цвет: Темно-коричневый
-                                       </p>
 
-                                       <div class="sum">
-                                           <em>+</em><label>1</label>
+                                       <div class="col-md-2">
+                                           <img class="img-resposive" src="<?php echo get_template_directory_uri(); ?>/dist/img/product/sample1.png">
                                        </div>
-                                       <div class="cancel">
 
+                                       <div class="col-md-10">
+                                           <p class="name">
+                                               Щетка для полировки из козьего ворса (темная колодка, 140 х 55 мм)
+                                           </p>
+                                           <p class="data">
+                                               1 Х 750 <span>Р.-</span>
+                                           </p>
+                                           <p class="attribute color">
+                                               Цвет: Темно-коричневый
+                                           </p>
+
+                                           <div class="sum">
+                                               <em>+</em><label>1</label>
+                                           </div>
+                                           <div class="minus">
+                                               <em>-</em><label>1</label>
+                                           </div>
+                                           <div class="cancel">
+
+                                           </div>
                                        </div>
+
                                    </div>
                                </li>
 
-                               <!-- more li-->
 <!--                               <li class="produclLi">-->
 <!--                                   <div class="row">-->
-<!--                                       <img class="img-resposive" src="--><?php //echo get_template_directory_uri(); ?><!--/dist/img/product/sample1.png">-->
-<!--                                       <p class="name">-->
-<!--                                           Чехол-несессер Waxa Shop-->
-<!--                                       </p>-->
-<!--                                       <p class="data">-->
-<!--                                           1 Х 2 660 Р.--->
-<!--                                       </p>-->
-<!--                                       <p class="attribute color">-->
-<!--                                           Цвет: Темно-коричневый-->
-<!--                                       </p>-->
 <!---->
-<!--                                       <div class="sum">-->
-<!--                                           <em>+</em><label>1</label>-->
+<!--                                       <div class="col-md-2">-->
+<!--                                           <img class="img-resposive" src="--><?php //echo get_template_directory_uri(); ?><!--/dist/img/product/sample1.png">-->
 <!--                                       </div>-->
-<!--                                       <div class="cancel">-->
 <!---->
+<!--                                       <div class="col-md-10">-->
+<!--                                           <p class="name">-->
+<!--                                               Чехол-несессер Waxa Shop-->
+<!--                                           </p>-->
+<!--                                           <p class="data">-->
+<!--                                               1 Х 2 660 Р.--->
+<!--                                           </p>-->
+<!--                                           <p class="attribute color">-->
+<!--                                               Цвет: Темно-коричневый-->
+<!--                                           </p>-->
+<!---->
+<!--                                           <div class="sum">-->
+<!--                                               <em>+</em><label>1</label>-->
+<!--                                           </div>-->
+<!--                                           <div class="cancel">-->
+<!---->
+<!--                                           </div>-->
 <!--                                       </div>-->
+<!---->
 <!--                                   </div>-->
 <!--                               </li>-->
+
                            </ul>
                        <!-- end of productSummary -->
                        <!--  totalWrap -->
@@ -260,13 +297,13 @@ Template Name: Woocommerce checkout
                                                        </span>
                                                    </fieldset>
 
-                                                   <fieldset class="col-md-6">
+                                                   <fieldset class="col-md-6 emailSender">
                                                        <label for="mailer"></label>
                                                        <input type="checkbox" id="mailer">
                                                        <span>
                                                            ПОДПИСАТЬСЯ НА EMAIL-РАССЫЛКУ
                                                        </span>
-                                                       <p class="mini">
+                                                       <p class="miniText">
                                                            и получить безграничный доступ к самым выгодным предложениям и интересным статьям
 
                                                        </p>

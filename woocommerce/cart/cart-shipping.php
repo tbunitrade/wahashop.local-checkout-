@@ -6,24 +6,23 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/cart/cart-shipping.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
- * will need to copy the new files to your theme to maintain compatibility. We try to do this.
- * as little as possible, but it does happen. When this occurs the version of the template file will.
- * be bumped and the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
+ * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.5.0
+ * @version     3.1.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<tr class="shipping ">
-	<td><h3><span>3</span> Способ доставки</h3></td>
-	<!-- <h3><span>2</span> Способ доставки</h3> -->
-	<!-- <th><?php //echo wp_kses_post( $package_name ); ?></th> -->
+<tr class="shipping">
+	<th><?php echo wp_kses_post( $package_name ); ?></th>
 	<td data-title="<?php echo esc_attr( $package_name ); ?>">
 		<?php if ( 1 < count( $available_methods ) ) : ?>
 			<ul id="shipping_method">
@@ -55,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php echo '<p class="woocommerce-shipping-contents"><small>' . esc_html( $package_details ) . '</small></p>'; ?>
 		<?php endif; ?>
 
-		<?php if ( is_cart() && ! $index ) : ?>
+		<?php if ( ! empty( $show_shipping_calculator ) ) : ?>
 			<?php woocommerce_shipping_calculator(); ?>
 		<?php endif; ?>
 	</td>

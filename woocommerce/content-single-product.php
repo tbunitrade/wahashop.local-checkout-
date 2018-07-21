@@ -4,15 +4,16 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/content-single-product.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
- * will need to copy the new files to your theme to maintain compatibility. We try to do this.
- * as little as possible, but it does happen. When this occurs the version of the template file will.
- * be bumped and the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
+ * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     1.6.4
+ * @version     3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -35,12 +36,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 
-<!-- start item -->
-<div class="item">
-	<div class="item-right">
-	    <!--<div class="back-button">
-	        <a href="#"><img src="/img/back_icon.png" /></a>
-	    </div>-->
+<div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php
+		/**
+		 * woocommerce_before_single_product_summary hook.
+		 *
+		 * @hooked woocommerce_show_product_sale_flash - 10
+		 * @hooked woocommerce_show_product_images - 20
+		 */
+		do_action( 'woocommerce_before_single_product_summary' );
+	?>
+
+	<div class="summary entry-summary">
 
 		<?php
 			/**
@@ -53,43 +61,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked woocommerce_template_single_add_to_cart - 30
 			 * @hooked woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
+			 * @hooked WC_Structured_Data::generate_product_data() - 60
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 		?>
-	</div>
-
-    <div class="item-left">
-        <div class="main-img">
-    		<?php
-				/**
-				 * woocommerce_before_single_product_summary hook.
-				 *
-				 * @hooked woocommerce_show_product_sale_flash - 10
-				 * @hooked woocommerce_show_product_images - 20
-				 */
-				do_action( 'woocommerce_before_single_product_summary' );
-			?>
-        </div>
-        <!--<div class="second-img">
-
-            <div class="second-img-item"></div>
-            <div class="second-img-item"></div>
-            <div class="second-img-item"></div>
-            <div class="second-img-item"></div>
-        </div>-->
-    </div>
-    <div class="clearfix">
-
-</div>
-<!-- end item -->
-
-<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-
-
-	<div class="summary entry-summary">
-
-		
 
 	</div><!-- .summary -->
 
@@ -101,10 +76,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * @hooked woocommerce_upsell_display - 15
 		 * @hooked woocommerce_output_related_products - 20
 		 */
-		//do_action( 'woocommerce_after_single_product_summary' );
+		do_action( 'woocommerce_after_single_product_summary' );
 	?>
-
-	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
 </div><!-- #product-<?php the_ID(); ?> -->
 

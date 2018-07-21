@@ -58,11 +58,20 @@
   .promoWrap{
     margin-top: 15px;
 
+    .col-md-6 {
+      padding-right: 0;
+    }
+
     label{
       color: #aa6e0d;
       font-size: 15px;
       font-weight: bold;
       font-family: 'Gotham Pro';
+
+      position: relative;
+      top: -3px;
+      left: 3px;
+      letter-spacing: 0.3px;
     }
 
     fieldset{
@@ -101,22 +110,24 @@
     color: $black;
     width: 188px;
     height: 41px;
-    line-height: 41px;
+
+
+
+    line-height: 34px;
     text-decoration: none;
     text-align: center;
-    border:1px solid #a2a2a2;
+    border: 1px solid #a2a2a2;
     display: inline-block;
     vertical-align: top;
-    margin-top: 29px;
-    margin-left: 28px;
-    margin-top: 38px;
+    margin-left: 32px;
+    margin-top: 37px;
 
   }
 
   .bonus {
     vertical-align: top;
-    margin-top: 34px;
-    margin-left: 28px;
+    //margin-top: 34px;
+    //margin-left: 32px;
   }
 
   .dot {
@@ -203,6 +214,7 @@
 
       @media (min-width: $screen-md-min) {
         max-width: 450px;
+
       }
     }
 
@@ -247,19 +259,22 @@
       text-align: center;
       display: inline-block;
       vertical-align: top;
+      text-transform: uppercase;
     }
 
     .loginWooLabel {
-      line-height: 21px;
       display: inline-block;
       vertical-align: top;
       font-family: 'Gotham Pro';
       font-size: 12px;
-      padding-right: 2%;
+      padding-left: 10px;
+      line-height: 19px;
+      letter-spacing: 0.2px;
     }
 
     .title {
       padding-bottom: 24px;
+      padding-left: 6px;
     }
 
     .hereStartForm{
@@ -271,6 +286,7 @@
         font-family: 'Gotham Pro';
         color:#ea5656 ;
         font-weight: 400;
+        letter-spacing: 0.5px;
       }
     }
 
@@ -296,6 +312,7 @@
           opacity: 0.33;
           font-size: 16px;
           line-height: 16px;
+          font-family: 'PT Sans';
         }
 
         ::placeholder{
@@ -303,6 +320,7 @@
           opacity: 0.33;
           font-size: 16px;
           line-height: 16px;
+          font-family: 'PT Sans';
         }
       }
     }
@@ -317,6 +335,8 @@
         padding: 0;
         padding-left: 10px;
       }
+
+
 
       fieldset{
 
@@ -336,10 +356,27 @@
           top: 11px;
         }
       }
+
+      .emailSender{
+        padding-left: 40px;
+        label{
+          left: 12px;
+        }
+
+        .miniText{
+          font-size: 14px;
+          color: #262626;
+          font-family: 'PT Sans';
+          font-weight: 400;
+          opacity: 0.75;
+          padding-top: 6px;
+        }
+      }
     }
 
     .hereInner {
-      max-width: 477px;
+
+      max-width: 470px;
 
       .row {
         .col-md-3 {
@@ -365,119 +402,151 @@
       width: 100%;
       border-top: 1px solid #e3e3e3;
       position: relative;
+      margin-bottom: 9px;
 
-      margin-bottom: 12px;
+      .col-md-2 {
+        padding: 0;
 
-      .img-resposive {
-        float: left;
-      }
-
-      .name {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 16px;
-        font-family: 'PT Sans';
-        font-weight: 400;
-        color: #262626;
-        padding-top: 11px;
-        position: relative;
-        left: 17px;
-        top: -2px;
-        width: 68%;
-
-        @media (min-width: $screen-md-min) {
-          width: 72%;
+        .img-resposive {
+          float: left;
+          width: 100%;
+          max-width: 65px;
+          height: 65px;
+          padding: 0;
         }
       }
 
-      .data{
-        font-family: 'Gotham Pro';
-        font-size: 16px;
-        font-weight: 400;
-        display: inline-block;
-        vertical-align: top;
-        padding-top: 0px;
-        width: 100%;
-        position: relative;
-        left :5px;
+      .col-md-10 {
+        padding: 0;
 
-        @media (min-width: $screen-md-min) {
-          display: block;
-          left: 22px;
-          top: -6px;
-        }
-
-        number {
-          font-family: 'Gotham Pro';
+        .name {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 16px;
+          line-height: 25px;
+          font-family: 'PT Sans';
           font-weight: 400;
-        }
-      }
-
-      .attribute {
-        font-family: 'Gotham Pro';
-        font-size: 13.66px;
-        font-weight:400;
-        color: #888888;
-        display: inline-block;
-        width: 100%;
-        position: relative;
-        top: 0;
-        left: 5px;
-
-        @media (min-width: $screen-md-min) {
+          color: #262626;
+          padding-top: 11px;
           position: relative;
-          top: -5px;
-          left: 22px;
+          left:9px;
+          top: -2px;
+          width: 68%;
+
+          @media (min-width: $screen-md-min) {
+            width: 80%;
+          }
         }
 
-      }
+        .data{
+          font-family: 'PT Sans';
+          font-size: 14px;
+          font-weight: 700;
+          display: inline-block;
+          vertical-align: top;
+          padding-top: 0px;
+          width: 100%;
+          position: relative;
+          left :5px;
 
-      .bonus{
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 0;
+          span {
+            font-family: 'PT Sans';
+            font-size: 14px;
+            font-weight: 700;
+            display: inline-block;
+          }
+
+          @media (min-width: $screen-md-min) {
+            display: block;
+
+            left: 10px;
+            top: -7px;
+          }
+
+          number {
+            font-family: 'Gotham Pro';
+            font-weight: 400;
+          }
+        }
+
+        .attribute {
+          font-family: 'Gotham Pro';
+          font-size: 13.66px;
+          font-weight:400;
+          color: #888888;
+          display: inline-block;
+          width: 100%;
+          position: relative;
+          top: 0;
+          left: 5px;
+
+          @media (min-width: $screen-md-min) {
+            position: relative;
+            top: -8px;
+            left: 10px;
+          }
+
+        }
+
+        .bonus{
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 0;
+
+          .sum {
+
+            em {
+              font-style: normal;
+
+            }
+            em,
+            label,span {
+              font-size: 16px;
+              font-family: 'PT Sans';
+              font-weight: 400;
+              color: #888;
+            }
+          }
+        }
 
         .sum {
-
-          em {
-            font-style: normal;
-
-          }
-          em,
-          label,span {
-            font-size: 16px;
-            font-family: 'PT Sans';
-            font-weight: 400;
-            color: #888;
-          }
-        }
-      }
-
-      .sum {
-        position: absolute;
-        right: 27px;
-        top: 13px;
-
-        @media (min-width: $screen-md-min) {
-          right: 20px;
+          position: absolute;
+          right: 27px;
           top: 13px;
+
+          @media (min-width: $screen-md-min) {
+            right: 20px;
+            top: 13px;
+          }
         }
-      }
 
-      .cancel {
-        position: absolute;
-        right: 5px;
-        top:19px;
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background: url("../img/cancel.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+        .minus {
+          position: absolute;
+          right: 27px;
+          top: 33px;
 
-        @media (min-width: $screen-md-min) {
-          right: 0px;
+          @media (min-width: $screen-md-min) {
+            right: 20px;
+            top: 33px;
+          }
+        }
+
+        .cancel {
+          position: absolute;
+          right: 5px;
+          top:19px;
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background: url("../img/cancel.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+
+          @media (min-width: $screen-md-min) {
+            right: 0px;
+            right: -11px;
+          }
         }
       }
 
@@ -485,7 +554,6 @@
         margin: 0;
       }
      }/*End of produclLi*/
-
   }
 
   .endCost {
@@ -828,7 +896,8 @@
 }
 
 .magazinWrap{
-  margin-top: 30px;
+
+
   background: #f6f6f6;
   display: inline-block;
   width: 96%;
