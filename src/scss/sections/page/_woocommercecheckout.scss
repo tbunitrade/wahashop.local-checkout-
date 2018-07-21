@@ -26,10 +26,7 @@
     font-size: 42px;
     line-height: 42px;
     padding-top: 60px;
-    font-family: 'Amsterdam-Deco-One';
-    font-family: 'Amsterdam-Deco-Two';
-    font-family: 'Amsterdam';
-    font-family: 'Roboto';
+    font-family: 'AmsterdamDecoOne';
     color: $ammsterdam;
     text-align: center;
     display: inline-block;
@@ -53,6 +50,14 @@
     text-align: left;
     font-size: 16px;
     line-height: 13px;
+
+    span {
+      font-family: 'Gotham Pro';
+      font-weight: 400;
+      text-align: left;
+      font-size: 16px;
+      line-height: 13px;
+    }
   }
 
   .promoWrap{
@@ -128,6 +133,7 @@
     vertical-align: top;
     //margin-top: 34px;
     //margin-left: 32px;
+
   }
 
   .dot {
@@ -162,10 +168,7 @@
 
       a {
         font-size: 43px;
-        font-family: 'Amsterdam-Deco-One';
-        font-family: 'Amm';
         font-family: 'Amsterdam';
-        font-family: 'Roboto';
         color: #d7bfa5;
         opacity: 1;
         position: relative;
@@ -580,19 +583,33 @@
         top: 5px;
 
         number {
+          font-family: 'Gotham Pro';
           display: inline-block;
           vertical-align: top;
           position: relative;
-          top:0px;
+          font-weight: 400;
+          font-size: 16px;
           left:0px;
+          top:0px;
+        }
+
+        span{
+          font-family: 'Gotham Pro';
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          font-weight: 400;
+          font-size: 16px;
+          left:0px;
+          top:0px;
         }
       }
 
       .bonus {
         position: relative;
-        right: 0px;
-        top: 0px;
-        margin-left: 16px;
+        left: -11px;
+        top: -3px;
+
         width: 118px;
         border-radius: 4px;
         margin-top: 0;
@@ -606,6 +623,21 @@
           position: relative;
           right: 00px;
           top: 0px;
+
+          em {
+            font-style: normal;
+            font-family: 'PT Sans';
+            font-weight: 400;
+            font-size: 16px;
+          }
+
+          label,
+          span{
+            font-family: 'PT Sans';
+            font-weight: 400;
+            font-size: 16px;
+          }
+
         }
       }
     }
@@ -693,7 +725,8 @@
 
               content: '';
               position: absolute;
-              left: 100%;
+              left: 110%;
+              top: -5px;
             }
           }
         }
@@ -716,6 +749,9 @@
               height: 32px;
               display: inline-block;
               vertical-align: top;
+
+              left: 110%;
+              top: -5px;
             }
           }
         }
@@ -738,6 +774,9 @@
                 height: 25px;
                 display: inline-block;
                 vertical-align: top;
+
+                left: 110%;
+                top: -5px;
               }
             }
         }
@@ -761,6 +800,9 @@
               content: '';
               position: absolute;
               left: 100%;
+
+              left: 110%;
+              top: -5px;
             }
           }
         }
@@ -832,12 +874,14 @@
             display: inline-block;
             background: #f2eada;
             border: 1px solid #282828;
+
+
             border-radius: 50%;
             width: 23px;
             height: 23px;
             position: relative;
-            top: -13px;
-            left: 10px;
+            top: -10px;
+            left: 3px;
           }
 
           checked,
@@ -856,15 +900,17 @@
           }
 
           span{
+
             font-size: 16px;
+            line-height: 21px;
             font-family: 'Gotham Pro';
+
+
             position: relative;
             left: 11px;
             display: inline-block;
-            top: 8px;
+            top: 9px;
             width: 71%;
-            font-weight: 400;
-            text-transform: uppercase;
 
             em{
               display: block;
@@ -896,8 +942,6 @@
 }
 
 .magazinWrap{
-
-
   background: #f6f6f6;
   display: inline-block;
   width: 96%;
@@ -909,16 +953,18 @@
   }
 
   .productList {
+
     .hereInner {
       max-width: 287px;
 
       @media (min-width: $screen-md-min) {
-        max-width: 487px;
+        max-width: 493px;
       }
 
       .title{
         font-size: 34px;
-        padding-top: 16px;
+        padding-top: 18px;
+        padding-left: 7px;
 
         strong {
           color:#a66a0c;
@@ -932,20 +978,33 @@
     font-size: 16px;
     font-weight: 400;
     color:#262626;
-    line-height: 26px;
-    padding-top: 35px;
+
+
+    line-height: 28px;
+    padding-top: 31px;
+    padding-left: 7px;
+    padding-right: 19%;
   }
 
   .lunchStep3{
+
+
     width: 273px;
     height: 57px;
+    letter-spacing: 0.01px;
     display: inline-block;
     background: #a66b0c;
     text-decoration: none;
     line-height: 57px;
     text-align: center;
-    color: $white;
-    margin-top: 46px;
+    color: #fff;
+
+    margin-top: 47px;
+    margin-left: 8px;
+
+    font-family: 'Gotham Pro';
+    font-size: 15px;
+    font-weight: 700;
   }
 
   .map {
@@ -1044,8 +1103,7 @@
       width: 25px;
       margin: auto;
       color: #aa6f0d;
-      font-family: 'Amsterdam';
-      font-family: 'Amsterdam-Deco-One';
+      font-family: 'AmsterdamDecoOne';
     }
 
     .dot {

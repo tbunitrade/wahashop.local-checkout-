@@ -172,7 +172,7 @@ Template Name: Woocommerce checkout
                                        </h3>
 
                                        <div class="price">
-                                           3 230 <b> Р.-</b>
+                                           3 230 <span> Р.-</span>
                                        </div>
                                    </div>
 
@@ -496,9 +496,9 @@ Template Name: Woocommerce checkout
                                <div class="row">
 
                                    <p class="data">
-                                       <number>3 333 Р.-</number>
+                                       <number>3 333 </number><span> Р.-</span>
 
-                                        <div class="bonus">
+                                   <div class="bonus">
                                            <div class="sum">
                                                <em>+</em><label>34 </label><span>бонуса</span>
                                            </div>
